@@ -49,3 +49,16 @@ component "nulls" {
     null = provider.null.this
   }
 }
+
+component "nils" {
+  source = "./nulls"
+
+  inputs = {
+    pet = component.pet.name
+    instances = component.pet.number
+  }
+
+  providers = {
+    null = provider.null.this
+  }
+}
