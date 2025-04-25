@@ -14,7 +14,7 @@ incurred.
 _We do not recommend using this example within production accounts._
 
 ## Usage
-
+ 
 _Prerequisites: You must have a Terraform Cloud account with access to the private preview of
 Terraform Stacks and a GitHub account._
 
