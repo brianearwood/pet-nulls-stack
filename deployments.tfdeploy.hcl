@@ -11,7 +11,7 @@ deployment "complex" {
     prefix           = "complex"
     instances        = 3
   }
-  destroy = false
+  destroy = true
 }
 
 deployment "complex2" {
