@@ -28,12 +28,12 @@ deployment "complex3" {
   }
 }
 
-# deployment "complex4" {
-#   inputs = {
-#     prefix           = "complex4"
-#     instances        = 3
-#   }
-# }
+deployment "complex4" {
+  inputs = {
+    prefix           = "complex4"
+    instances        = 3
+  }
+}
 
 # deployment_group "simple" {
 #   auto_approve_checks = [deployment_auto_approve.no_destroy]
