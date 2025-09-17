@@ -6,7 +6,7 @@ deployment "simple" {
   # deployment_group = deployment_group.simple
 }
 
-deployment "complex" {
+deployment "staging" {
   inputs = {
     prefix           = "complex"
     instances        = 3
@@ -14,14 +14,14 @@ deployment "complex" {
   destroy = true
 }
 
-deployment "complex2" {
+deployment "development" {
   inputs = {
     prefix           = "complex2"
     instances        = 4
   }
 }
 
-deployment "complex3" {
+deployment "prod" {
   inputs = {
     prefix           = "complex3"
     instances        = 3
