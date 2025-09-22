@@ -17,9 +17,9 @@ deployment "staging" {
 deployment "development" {
   inputs = {
     prefix           = "complex2"
-    instances        = 4
+    instanes        = 4
   }
-}
+
 
 deployment "prod" {
   inputs = {
