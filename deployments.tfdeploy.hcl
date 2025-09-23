@@ -11,15 +11,15 @@ deployment "staging" {
     prefix           = "complex"
     instances        = 3
   }
-  destroy = true
+  # destroy = true
 }
 
 deployment "development" {
   inputs = {
     prefix           = "complex2"
-    instanes        = 4
+    instances        = 4
   }
-
+}
 
 deployment "prod" {
   inputs = {
