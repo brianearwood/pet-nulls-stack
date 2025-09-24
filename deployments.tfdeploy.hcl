@@ -33,6 +33,7 @@ deployment "complex4" {
     prefix           = "complex4"
     instances        = 3
   }
+  destroy = true
 }
 
 # deployment_group "simple" {
