@@ -6,13 +6,13 @@ deployment "simple" {
   # deployment_group = deployment_group.simple
 }
 
-deployment "staging" {
-  inputs = {
-    prefix           = "complex"
-    instances        = 3
-  }
-  destroy = true
-}
+# deployment "staging" {
+#   inputs = {
+#     prefix           = "complex"
+#     instances        = 3
+#   }
+#   destroy = true
+# }
 
 deployment "development" {
   inputs = {
