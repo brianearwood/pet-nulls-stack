@@ -3,7 +3,7 @@ deployment "simple" {
     prefix           = "simple"
     instances        = 1
   }
-  # deployment_group = deployment_group.simple
+  deployment_group = deployment_group.simple
 }
 
 # deployment "staging" {
@@ -36,9 +36,9 @@ deployment "complex4" {
   destroy = true
 }
 
-# deployment_group "simple" {
-#   auto_approve_checks = [deployment_auto_approve.no_destroy]
-# }
+deployment_group "simple" {
+  auto_approve_checks = [deployment_auto_approve.no_destroy]
+}
 
 deployment_auto_approve "no_destroy" {
   check {
