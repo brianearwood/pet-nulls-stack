@@ -1,33 +1,35 @@
 deployment "simple" {
   inputs = {
+    prefix           = "simple"
     instances        = 1
-    aws_region     = "us-west-1"
   }
   deployment_group = deployment_group.simple
 }
 
 deployment "staging" {
   inputs = {
+    prefix           = "complex"
     instances        = 3
-    aws_region     = "us-west-1"
   }
 }
 
 deployment "development" {
   inputs = {
+    prefix           = "complex2"
     instances        = 4
-    aws_region     = "us-west-1"
   }
 }
 
 deployment "prod" {
   inputs = {
+    prefix           = "complex3"
     instances        = 3
   }
 }
 
 deployment "complex4" {
   inputs = {
+    prefix           = "complex4"
     instances        = 3
   }
 }
