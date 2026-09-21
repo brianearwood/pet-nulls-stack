@@ -26,7 +26,7 @@ resource "random_integer" "numbah" {
 
 resource "random_pet" "random_prefix" {
   prefix = random_pet.this.id
-  length = 4
+  length = 6
 }
 
 output "name" {
